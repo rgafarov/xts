@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "xts/gateway";
+
+
+service PushGateway {
+    rpc OrderBook(GatewayRequest) returns (GatewayResponse) {}
+}
+
+message GatewayRequest {
+    string name = 1;
+}
+
+message GatewayResponse {
+    int32 status = 1;
+}
