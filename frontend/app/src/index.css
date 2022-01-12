@@ -1,0 +1,11 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+    
+  .xts-buttn {
+    display: flex;
+    flex-direction: row;
+    color: dimgray;
+  }
+  
