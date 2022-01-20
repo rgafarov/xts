@@ -5,10 +5,11 @@ import (
 	"log"
 	"net"
 	"time"
-	"webserver/gopool"
 
 	"github.com/gobwas/ws"
 	"github.com/mailru/easygo/netpoll"
+
+	"github.com/rgafarov/xts/util/gopool"
 )
 
 var (
