@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/rgafarov/xts/cmd/authserver/app"
-	"github.com/rgafarov/xts/cmd/authserver/server"
+	"github.com/rgafarov/xts/cmd/authserver/auth"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 	signal.Notify(shutdown, syscall.SIGTERM, syscall.SIGINT)
 
 	// creating new instance of application
-	a := app.New(appName, configFile, &server.AuthServer{})
+	a := app.New(appName, configFile, &auth.AuthServer{})
 
 	// initialise the application
 	if a.Init() != nil {
